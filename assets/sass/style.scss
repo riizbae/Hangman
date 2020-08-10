@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(0, 0, 0);
+}
+
+.container {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    .intro{
+        flex: 0 1 auto;
+
+        h1 {
+            color: #fff;
+            font-size: 9rem;
+            font-weight: 400;
+            animation: glow flicker 1.2s ease-in-out infinite alternate;
+            font-family: 'Rowdies', cursive;
+
+            .flicker {
+                    animation: flicker 2s ease infinite alternate;
+        }
+    }
+  }
+
+  #play {
+    position: relative;
+    outline: none;
+    width: 12rem;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin-bottom: 5rem;
+    background: none;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor:grab;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #ff1ead, 0 0 10px #ff1ead,
+      0 0 20px #ff1ead, 0 0 30px #ff1ead;
+  }
+}
+
+@import 'animation';
+@import 'categorie';
+@import 'jeu';
+@import 'canvas';
+@import 'responsive';

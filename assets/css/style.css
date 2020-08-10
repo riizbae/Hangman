@@ -1,0 +1,153 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.container .intro {
+  flex: 0 1 auto;
+}
+
+.container .intro h1 {
+  color: #fff;
+  font-size: 9rem;
+  font-weight: 400;
+  animation: glow flicker 1.2s ease-in-out infinite alternate;
+  font-family: 'Rowdies', cursive;
+}
+
+.container .intro h1 .flicker {
+  animation: flicker 2s ease infinite alternate;
+}
+
+.container #play {
+  position: relative;
+  outline: none;
+  width: 12rem;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin-bottom: 5rem;
+  background: none;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: grab;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #ff1ead, 0 0 10px #ff1ead, 0 0 20px #ff1ead, 0 0 30px #ff1ead;
+}
+
+/*animation title*/
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  15%,
+  17%,
+  20%,
+  22%,
+  74%,
+  76%,
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #ff1ead, 0 0 35px #ff1ead, 0 0 45px #ff1ead, 0 0 55px #ff1ead, 0 0 65px #ff1ead;
+  }
+  16%,
+  21%,
+  75% {
+    text-shadow: none;
+  }
+}
+
+#categories {
+  color: #ff1ead;
+  font-size: 2rem;
+  font-size: 1.2rem;
+}
+
+#categories li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+#categories #cat-list {
+  list-style-type: none;
+}
+
+#categories #cat-list li {
+  display: block;
+  padding: 0.5rem 1.2rem;
+}
+
+#alpha {
+  color: #ff1ead;
+  font-size: 2rem;
+}
+
+#alpha li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+#alpha .clicked {
+  color: #fff;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+  height: 100%;
+  width: 80vw;
+  color: #fff;
+  display: none;
+  margin-bottom: 2rem;
+}
+
+#lives {
+  color: #fff;
+}
+
+#canvas {
+  max-width: 400px;
+  max-height: 250px;
+  border: 2px solid #fff;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .intro h1 {
+    font-size: 4rem;
+  }
+  #play {
+    width: 8rem;
+    font-size: 1rem;
+  }
+  #alpha li,
+  #categories p {
+    font-size: 1.2rem;
+  }
+  #lives {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

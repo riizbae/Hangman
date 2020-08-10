@@ -1,0 +1,24 @@
+#categories {
+  color: #ff1ead;
+  font-size: 2rem;
+  font-size: 1.2rem;
+
+     li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+
+    }
+
+    #cat-list {
+        list-style-type: none;
+
+        li{
+            display: block;
+            padding: 0.5rem 1.2rem;
+        }
+    }
+    
+    
+}

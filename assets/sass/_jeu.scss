@@ -1,0 +1,32 @@
+#alpha{
+    color: #ff1ead;
+    font-size: 2rem;
+
+    li{
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+    }
+
+    .clicked{
+        color: #fff;
+    }
+}
+
+#game{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 80vw;
+    color: #fff;
+    display: none;
+    margin-bottom: 2rem;
+}
+
+#lives{
+    color:#fff;
+}
