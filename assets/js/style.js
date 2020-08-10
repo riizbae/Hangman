@@ -15,7 +15,9 @@ const categories = {
   villes: ["londre", "tokyo", "paris", "bruxelles", "berlin", "amsterdam"],
   pays: ["portugal", "suisse", "pologne", "liechtenstein", "allemagne", "belgique", "canada", "japon", "luxembourg"],
   marque: ["samsung", "huawei", "xiaomi", "amazon", "disney", "ubuntu"],
-  bd : ["astérix", "scrameustache", "spirou et fantasio"]
+  bd : ["asterix", "scrameustache", "spirou et fantasio"],
+  chanteur : ["jacques brel", "lady gaga", "madonna", "lorie", "jonhy halliday"],
+  animaux : ["dauphin", "chevaux", "lion", "jaguar", "ours", "koala"]
 };
 
 const alpha = [
