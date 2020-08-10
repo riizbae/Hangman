@@ -220,7 +220,7 @@ function drawHangMan(lives) {
 function endGame(txt) {
   txt === "winner"
     ? (livesDiv.innerText = `Génial ! Tu as gagné.`)
-    : (livesDiv.innerText = `Tu as perdu !`);
+    : (livesDiv.innerText = `gagné !`);
 
   button.innerText = "Un nouveau jeu ?";
   button.style.visibility = "visible";
