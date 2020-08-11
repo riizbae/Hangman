@@ -1,4 +1,4 @@
-/***  Variables ***/
+
 const intro = document.querySelector(".intro");
 const button = document.getElementById("play");
 const gameDiv = document.querySelector(".game");
@@ -231,3 +231,5 @@ function endGame(txt) {
 
   alphaDiv.removeEventListener("click", clickedGuess);
 }
+
+ // allow the user to add words to a category and/or create a category
