@@ -221,6 +221,10 @@ function endGame(txt) {
   txt === "winner"
     ? (livesDiv.innerText = `Génial ! Tu as gagné.`)
     : (livesDiv.innerText = `gagné !`);
+  
+  txt === "looser"
+    ? (livesDiv.innerText = `Oh! Tu as perdu.`)
+    : (livesDiv.innerText = `perdu !`);
 
   button.innerText = "Un nouveau jeu ?";
   button.style.visibility = "visible";
