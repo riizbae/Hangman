@@ -1,4 +1,4 @@
-
+// variable
 const intro = document.querySelector(".intro");
 const button = document.getElementById("play");
 const gameDiv = document.querySelector(".game");
@@ -49,10 +49,10 @@ const alpha = [
   "z"
 ];
 
-/*** Event Listeners ***/
+// Event Listeners 
 button.addEventListener("click", gameStart);
 
-/*** Functions ***/
+// Functions 
 function gameStart() {
   setDefault();
 
